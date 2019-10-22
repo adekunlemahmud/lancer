@@ -2,35 +2,236 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto&display=swap" rel="stylesheet">
-		<link
-		href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap"
-		rel="stylesheet"
-	/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap" rel="stylesheet" />
 		<title>Setting | Profile</title>
-		<link rel="shortcut icon" href="https://res.cloudinary.com/ddu0ww15f/image/upload/v1571417665/icons8-estimates-16_adktgw.png" type="image/x-icon">
+	
     <style>
-        body {
-					font-family: 'Roboto', sans-serif;
+		/* -------------------------------------------------- */
+		/* Testing line */
+		body {
+            font-family: 'Roboto', sans-serif;
             font-weight: 200;
-						font-size:14px;
+            font-size: 14px;
         }
-        
+
         h1 {
-						font-family: 'Open Sans', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             font-weight: Bold;
             font-size: 24px;
         }
-        
+
         h3 {
-					font-family: 'Open Sans', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             font-weight: bold;
             font-size: 18px;
+        }
+
+
+        .side-nav {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding-bottom: 200px;
+        }
+
+        .logo-con {
+            background-color: #000000;
+        }
+
+        .logo {
+            font-family: "Pacifico", cursive;
+            color: #ffffff;
+            font-size: 36px;
+        }
+
+        .logo span {
+            color: #0abab5;
+        }
+
+        .nav-option {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            color: #4f4f4f;
+            text-align: left;
+        }
+
+        .active-nav {
+            color: #0abab5;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #0abab5;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .navbar-brand i {
+            padding-right: 15px;
+        }
+
+        .search {
+            margin-left: 300px;
+            margin-right: 200px;
+        }
+
+
+
+
+        .kc-nav-box {
+            height: 80px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .kc-a-u {
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        @media only screen and (max-width: 1360px) {
+            .search {
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .kc-a-u {
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+
+            .search {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 999px) {
+            .v-nav-index {
+                z-index: 5;
+                border: 1px solid #c4c4c4;
+                background-color: #ffffff;
+            }
+
+            form {
+                height: 100%;
+                min-height: 100%;
+            }
+
+            .kc-unlist-item {
+                justify-content: center;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .kc-unlist-item {
+                flex-direction: row;
+                width: 90%;
+                margin: 0 5% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 768px) {
+            .kc-a-u {
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-left: 2vh;
+            }
+
+        }
+
+        @media only screen and (max-width: 414px) {
+            .kc-a-u {
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-left: 2vh;
+            }
+
+        }
+
+        @media only screen and (max-width: 375px) {
+            .kc-unlist-item {
+                flex-direction: row;
+            }
+
+        }
+
+        @media only screen and (max-width: 375px) {
+            .kc-a-u {
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-left: 2vh;
+            }
+
+        }
+
+        @media only screen and (max-width: 360px) {
+            .kc-unlist-item {
+                flex-direction: row;
+            }
+
+        }
+
+        @media only screen and (max-width: 360px) {
+            .kc-a-u {
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-left: 2vh;
+            }
+
+        }
+
+        @media only screen and (max-width: 320px) {
+            .kc-a-u {
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-left: 2vh;
+            }
+        }
+
+
+
+		/* ------------------------------------------------------- */
+        body {
+				font-family: 'Roboto', sans-serif;
+            	font-weight: 200;
+				font-size:14px;
+        }
+        
+        h1 {
+				font-family: 'Open Sans', sans-serif;
+            	font-weight: Bold;
+            	font-size: 24px;
+        }
+        
+        h3 {
+				font-family: 'Open Sans', sans-serif;
+            	font-weight: bold;
+            	font-size: 18px;
         }
 
         .form-container{
@@ -293,7 +494,12 @@
     
 }
 
-
+@media only screen and (max-width: 1360px) {
+            .search {
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
 
 
 
@@ -304,22 +510,28 @@
 			border:1px solid black;
 			border-radius:50%;
 			}
+			.search {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
 	
 }
-@media only screen and (min-width: 999px) {
-	.v-nav-index{
-					z-index: 5;
-					border:1px solid #c4c4c4;
-					background-color: #ffffff;
-	}
-	form{
-				height:100%;
-				min-height:100%;
-			}
-			.kc-unlist-item{
-				justify-content: center;
-			}
-}
+@media only screen and (max-width: 999px) {
+            .v-nav-index {
+                z-index: 5;
+                border: 1px solid #c4c4c4;
+                background-color: #ffffff;
+            }
+
+            form {
+                height: 100%;
+                min-height: 100%;
+            }
+
+            .kc-unlist-item {
+                justify-content: center;
+            }
+        }
 
 @media only screen and (max-width: 768px) {
     .kc-unlist-item{
@@ -394,47 +606,26 @@
    
 }
 @media only screen and (max-width: 375px) {
-    .kc-unlist-item{
-        flex-direction:row;
-    }
-   
-}
-@media only screen and (max-width: 375px) {
-    .kc-a-u{
-			height:50px;
-	width:50px;
-	border:1px solid black;
-	border-radius:50%;
-        margin-left:2vh;
-    }
-   
-}
-@media only screen and (max-width: 360px) {
-    .kc-unlist-item{
-        flex-direction:row;
-    }
-   
-}
+            .kc-unlist-item {
+                flex-direction: row;
+            }
 
-@media only screen and (max-width: 360px) {
-    .kc-a-u{
-			height:50px;
-	width:50px;
-	border:1px solid black;
-	border-radius:50%;
-        margin-left:2vh;
-    }
-   
-}
-@media only screen and (max-width: 320px) {
-    .kc-a-u{
-			height:50px;
-	width:50px;
-	border:1px solid black;
-	border-radius:50%;
-        margin-left:2vh;
-    }
-}
+        }
+
+        @media only screen and (max-width: 375px) {
+            .kc-a-u {
+                height: 50px;
+                width: 50px;
+                border: 1px solid black;
+                border-radius: 50%;
+                margin-left: 2vh;
+            }
+
+        }
+
+
+
+
     </style>
 </head>
 
@@ -443,7 +634,7 @@
 		<div class="row">
 			<nav class="navbar col-12 navbar-expand-lg navbar-light  border-bottom kc-nav-box">
 					<a class="navbar-brand" href="#">
-					<img src="image/Shape.svg" class="mr-3">
+							<i class="fa fa-chevron-left class="mr-3"></i>
 					DASHBOARD</a>
 				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
@@ -456,18 +647,21 @@
 					    <ul class="navbar-nav ml-0 kc-unlist-item">
 						    <li class="nav-item active border-right">
 						        <a class="nav-link mt-2 mr-3" href="#">
-						        	<img src="image/help.svg">
+										<img src="https://lancer-app.000webhostapp.com/images/svg/help.svg" height="25"
+										width="auto">
 						        </a>
 						    </li>
 						    <li class="nav-item border-right">
 						        <a class="nav-link mt-2 mx-3" href="#">
-						        	<img src="image/alarm-clock.svg">
+										<img src="https://lancer-app.000webhostapp.com/images/svg/alarm-clock.svg" height="25"
+										width="auto">
 						        </a>
 						    </li>
 						    
 						     <li class="nav-item border-right">
 						         <a class="nav-link mt-2 mx-3" href="#">
-						         	<img src="image/Vector.svg">
+										<img src="https://lancer-app.000webhostapp.com/images/svg/notification.svg" height="25"
+										width="auto">
 						         </a>
 						    </li>
 
