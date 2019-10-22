@@ -224,18 +224,16 @@
 			transition: margin 0.25s ease-out;
 			/* background-color: #091429 !important; */
 			}
-			.address{
-				margin-top: 8em;
-				margin-bottom: 2em;
+			.update{
+			margin-top: 1px;
+	}	
+	.address{
+				padding-top: 1em;
+				
 			}
-			.coy-contact,.coy-details{
-				margin-top: 1.3em;
-			}
-			.show-address{
-				display: inline;
-			}
-        @media (max-width: 616px) {
-
+			
+        @media only screen and (max-width: 616px) {
+			
             .form-container{
                 width: 100%;
                 margin-left: 0px;
@@ -274,12 +272,7 @@
             margin-bottom: 0px;
             padding-bottom: 0px;
         }
-    
-}
-
-
-
-.kc-nav-box{
+		.kc-nav-box{
 	height:80px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -289,18 +282,31 @@
 	border:1px solid black;
 	border-radius:50%;
 }
+.update{
+			margin-top: 1px;
+	}	
+	.address{
+				padding-top: 1em;
+				
+			}
+
+    
+}
+
+
+
 
 
 @media only screen and (max-width: 1024px) {
     .kc-a-u{
-			height:50px;
-	width:50px;
-	border:1px solid black;
-	border-radius:50%;
-	}
+			height:20px;
+			width:50px;
+			border:1px solid black;
+			border-radius:50%;
+			}
 	
 }
-@media only screen and (max-width: 999px) {
+@media only screen and (min-width: 999px) {
 	.v-nav-index{
 					z-index: 5;
 					border:1px solid #c4c4c4;
@@ -321,30 +327,72 @@
 				width:90%;
 				margin:0 5%!important;
     }
-   
-}
-@media only screen and (max-width: 768px) {
-    .kc-a-u{
+	.kc-a-u{
 			height:50px;
-	width:50px;
-	border:1px solid black;
-	border-radius:50%;
-        margin-left:2vh;
+			width:50px;
+			border:1px solid black;
+			border-radius:50%;
+			margin-left:2vh;
     }
-	
+	 .address{
+				padding-top: 7em;
+				
+			}
+			.profile_form {
+                width: 100%;
+				height: 100%;
+                margin: 0 auto;
+            }
+	.update{
+			margin-top:90px;
+	}	 
+   
 }
 
 @media only screen and (max-width: 414px) {
     .kc-a-u{
 			height:50px;
-	width:50px;
-	border:1px solid black;
-	border-radius:50%;
-        margin-left:2vh;
+			width:50px;
+			border:1px solid black;
+			border-radius:50%;
+       		margin-left:2vh;
     }
+	.update{
+			margin-top: 1px;
+	}	
+	.address{
+				padding-top: 1em;
+				
+			}
    
 }
-
+@media only screen and (min-width: 415px) {
+    
+	.update{
+			margin-top: 1px;
+	}	
+	.address{
+				padding-top: 1em;
+				
+			}
+   
+}
+@media only screen and (min-width: 617px) {
+    
+	.update{
+			margin-top: 90px;
+	}	
+	.address{
+				padding-top: 5em;
+				
+			}
+			.profile_form {
+                width: 100%;
+				height: 100%;
+                margin: 0 auto;
+            }
+   
+}
 @media only screen and (max-width: 375px) {
     .kc-unlist-item{
         flex-direction:row;
@@ -522,7 +570,7 @@
 									<!-- <span id="pmessage"></span> -->
 							</div>
 						
-							<div class="d-flex justify-content-center mb-3 ">
+							<div class="d-flex justify-content-center update">
 								<button type="submit" class="green-btn" >Update</button>
 							</div>
 					</form>
@@ -537,9 +585,9 @@
 					 <div class="col-sm-8 offset-md-4 company-details-form mt-5 pl-5 pr-5 pt-4 pb-4">
 							<div class="container">
 									<form id="company-details">
-											<label for="" class="msg"></label>
+											
 									
-									<div class="form-group">
+									<div class="form-group company1">
 											<div class="coy-details">
 													<div class="coy-details-name">
 															<label for="firstName">Company Name</label>
@@ -550,26 +598,13 @@
 															<input id="coyEmail" class="form-control" type="text" name="" placeholder="Company Email">
 													</div>
 											</div>
-													<!-- <span id="name_message"></span> -->
+												
 									</div>
-							</p>
-									<!-- <p>
-											<div class="caretCompany">
-													<h6> <i class="fas fa-angle-down show-angle-down"></i><i class="fas fa-angle-up show-angle-up"></i> &nbsp Address Setting</h6>
-											</div>
-									</p> -->
-						
-									<div class="form-group">  
-											
-											<div>
-													<!-- <label for="my-password">Company Address</label> -->
-													<!-- <input id="coyaddress" class="form-control" type="password" name="my-password" placeholder="Company Address"> -->
-											</div>
-									</p> 
+							
 									<div class="caret address">
 											<h6> <i class="fas fa-angle-down show-angle-down"></i><i class="fas fa-angle-up show-angle-up"></i> &nbsp Address Setting</h6>
 									</div>
-									<div class= "show-address hide">
+									<div >
 									<div>
 										<label for="my-password">Company Address</label>
 										<input id="coyaddress" class="form-control" type="password" name="my-password" placeholder="Company Address">
@@ -622,8 +657,7 @@
 																					</select>
 																			</div>
 															</div>
-															<!-- <span id="emessage"></span> -->
-											<!-- <span id="pmessage"></span> -->
+															
 									</div>
 									</div>
 								
@@ -770,14 +804,14 @@
         }
     });
 
-    companyDetailsButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        msg.textContent = " ";
-        if(companyName.value == ' ' || companyEmail.value === ' ' || companyAddress.value === ' '){ 
-            msg.textContent = "Please, fill all required fields";
-            return false;
-         }
-    });
+    // companyDetailsButton.addEventListener('click', (e) => {
+    //     e.preventDefault();
+    //     msg.textContent = " ";
+    //     if(companyName.value == ' ' || companyEmail.value === ' ' || companyAddress.value === ' '){ 
+    //         msg.textContent = "Please, fill all required fields";
+    //         return false;
+    //      }
+    // });
 
      
     companyEmail.addEventListener('input', (e) => {
