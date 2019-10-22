@@ -199,12 +199,32 @@
 				text-align: left;
 			}
 			.active-nav {
-				color: #0abab5;
-			}
-			a:hover {
-				text-decoration: none;
-				color: #0abab5;
-			}
+            color: #0abab5;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #0abab5;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .navbar-brand i {
+            padding-right: 15px;
+        }
+        .search {
+            margin-left: 300px;
+            margin-right: 200px;
+        }
+        .kc-nav-box {
+            height: 80px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .kc-a-u {
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
 			form{
 				min-height:500px;
 			}
@@ -279,7 +299,7 @@
 .kc-a-u{
 	height:50px;
 	width:50px;
-	border:1px solid black;
+	/* border:1px solid black; */
 	border-radius:50%;
 }
 .update{
@@ -294,7 +314,12 @@
 }
 
 
-
+@media only screen and (max-width: 1360px) {
+            .search {
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+        }
 
 
 @media only screen and (max-width: 1024px) {
@@ -309,7 +334,7 @@
 @media only screen and (min-width: 999px) {
 	.v-nav-index{
 					z-index: 5;
-					border:1px solid #c4c4c4;
+					/* border:1px solid #c4c4c4; */
 					background-color: #ffffff;
 	}
 	form{
@@ -440,58 +465,60 @@
 
 <body>
 	<div style="background:#ffffff;" class="col-12 border kc-nav-box">
-		<div class="row">
-			<nav class="navbar col-12 navbar-expand-lg navbar-light  border-bottom kc-nav-box">
-					<a class="navbar-brand" href="#">
-					<img src="image/Shape.svg" class="mr-3">
-					DASHBOARD</a>
-				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-			        </button>
+        <div class="row">
+            <nav class="navbar col-12 navbar-expand-lg navbar-light  border-bottom kc-nav-box">
+                <a class="navbar-brand" href="#">
+                    <i class="fa fa-chevron-left class=" mr-3"></i>
+                    DASHBOARD</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="row  collapse navbar-collapse mx-0 px-0 v-nav-index" id="navbarSupportedContent">
+                    <form class="form-inline  search  col-lg-4 col-sm-12">
+                        <input class="form-control mr-sm-2 col-12 " type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav ml-0 kc-unlist-item">
+                        <li class="nav-item active border-right">
+                            <a class="nav-link mt-2 mr-3" href="#">
+                                <img src="https://lancer-app.000webhostapp.com/images/svg/help.svg" height="25"
+                                    width="auto">
+                            </a>
+                        </li>
+                        <li class="nav-item border-right">
+                            <a class="nav-link mt-2 mx-3" href="#">
+                                <img src="https://lancer-app.000webhostapp.com/images/svg/alarm-clock.svg" height="25"
+                                    width="auto">
+                            </a>
+                        </li>
+                        <li class="nav-item border-right">
+                            <a class="nav-link mt-2 mx-3" href="#">
+                                <img src="https://lancer-app.000webhostapp.com/images/svg/notification.svg" height="25"
+                                    width="auto">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                                <div class="kc-a-u d-flex align-items-center justify-content-center">
+                                    <h3 style="color:black;" class="text-center mt-2">AU</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-none" style="width:100%">
+                        <div class="d-flex flex-column align-items-center	">
+                            <a href="settings-profile.html" class="nav-option py-3 active-nav">Profile Settings</a>
+                            <a href="settings-email.html" class="nav-option py-3">Email Notifications</a>
+                            <a href="" class="nav-option py-3">Subscription</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
 
-			  		<div class="row collapse navbar-collapse mx-0 px-0 v-nav-index" id="navbarSupportedContent">
-			  			<form class="form-inline my-2 my-lg-0 ml-auto col-lg-6 col-sm-12">
-					      <input class="form-control mr-sm-2 col-12" type="search" placeholder="Search" aria-label="Search">
-				    	</form>
-					    <ul class="navbar-nav ml-0 kc-unlist-item">
-						    <li class="nav-item active border-right">
-						        <a class="nav-link mt-2 mr-3" href="#">
-						        	<img src="image/help.svg">
-						        </a>
-						    </li>
-						    <li class="nav-item border-right">
-						        <a class="nav-link mt-2 mx-3" href="#">
-						        	<img src="image/alarm-clock.svg">
-						        </a>
-						    </li>
-						    
-						     <li class="nav-item border-right">
-						         <a class="nav-link mt-2 mx-3" href="#">
-						         	<img src="image/Vector.svg">
-						         </a>
-						    </li>
-
-						    <li class="nav-item">
-						         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
-						         	<div class="kc-a-u d-flex align-items-center justify-content-center">
-						         		<h3 style="color:black;" class="text-center mt-2">AU</h3>
-						         	</div>
-						         </a>
-						    </li>
-							</ul>
-							<div class="d-lg-none" style="width:100%">
-								<div class="d-flex flex-column align-items-center	">
-									<a href="settings-profile.html" class="nav-option py-3 active-nav">Profile Settings</a>
-									<a href="settings-email.html" class="nav-option py-3"
-										>Email Notifications</a>
-									<a href="" class="nav-option py-3">Subscription</a>
-								</div>
-							</div>
-						</div>
-						
-			</nav>
-		</div>
-	</div>
        
 <div class="container-fluid">
 		<div class="row mt-5 no-gutters">
